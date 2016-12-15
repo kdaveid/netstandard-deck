@@ -1,0 +1,246 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/night.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <h1>What is .NET Standard?</h1>
+        <blockquote>It ain't your father's .NET!</blockquote>
+        <h3>Adam Ralph</h3>
+        <p>Email: adam@adamralph.com</p>
+        <p>Twitter, GitHub, etc.: @adamralph</p>
+      </section>
+      <section>
+        <h2>My OSS packages</h2>
+        <h3>FakeItEasy</h3>
+        <h3>xBehave.net</h3>
+        <h3>LiteGuard</h3>
+      </section>
+      <section>
+        <h2>.NET Standard</h2>
+        <h3>FakeItEasy ✓ (1.6)</h3>
+        <h3>xBehave.net ✓ (1.6)</h3>
+        <h3>LiteGuard ✓ (1.0)</h3>
+      </section>
+      <section>
+        <h2>The Portable Class Library Fiasco</h2>
+      </section>
+      <section>
+        <img src="img/venn2.png" />
+      </section>
+      <section>
+        <img src="img/venn3.png" />
+      </section>
+      <section>
+        <img src="img/euler4.png" />
+      </section>
+      <section>
+        <img src="img/euler-british-isles.png" />
+      </section>
+      <section data-transition="convex-in none-out">
+        <img src="img/venn4-template.png" />
+      </section>
+      <section data-transition="none-in convex-out">
+        <img src="img/venn4.png" />
+      </section>
+      <section>
+        <img src="img/pcl-table.png" />
+        <p><a href="http://portablelibraryprofiles.apps.stephencleary.com/">portablelibraryprofiles.apps.stephencleary.com</a></p>
+      </section>
+      <section>
+        <img src="img/venn5.png" />
+        <p class="fragment stamp">fiasco!</p>
+      </section>
+      <section>
+        <img src="img/euler5-intersection.png" />
+      </section>
+      <section>
+        <img src="img/euler5.png" />
+      </section>
+      <section>
+        <table>
+          <thead>
+            <tr>
+              <th align="left">.NET Platform</th>
+              <th align="right"><a href="/dotnet/standard/blob/master/docs/versions/netstandard1.0.md">1.0</a></th>
+              <th align="right"><a href="/dotnet/standard/blob/master/docs/versions/netstandard1.1.md">1.1</a></th>
+              <th align="right"><a href="/dotnet/standard/blob/master/docs/versions/netstandard1.2.md">1.2</a></th>
+              <th align="right"><a href="/dotnet/standard/blob/master/docs/versions/netstandard1.3.md">1.3</a></th>
+              <th align="right"><a href="/dotnet/standard/blob/master/docs/versions/netstandard1.4.md">1.4</a></th>
+              <th align="right"><a href="/dotnet/standard/blob/master/docs/versions/netstandard1.5.md">1.5</a></th>
+              <th align="right"><a href="/dotnet/standard/blob/master/docs/versions/netstandard1.6.md">1.6</a></th>
+              <th align="right"><a href="/dotnet/standard/blob/master/docs/versions/netstandard2.0.md">2.0</a></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="left">.NET Core</td>
+              <td align="right">→</td>
+              <td align="right">→</td>
+              <td align="right">→</td>
+              <td align="right">→</td>
+              <td align="right">→</td>
+              <td align="right">→</td>
+              <td align="right">1.0</td>
+              <td align="right">vNext</td>
+            </tr>
+            <tr>
+              <td align="left">.NET Framework</td>
+              <td align="right">→</td>
+              <td align="right">4.5</td>
+              <td align="right">4.5.1</td>
+              <td align="right">4.6</td>
+              <td align="right">→</td>
+              <td align="right">→</td>
+              <td align="right">→</td>
+              <td align="right">4.6.1</td>
+            </tr>
+            <tr>
+              <td align="left">Mono</td>
+              <td align="right">→</td>
+              <td align="right">→</td>
+              <td align="right">→</td>
+              <td align="right">→</td>
+              <td align="right">→</td>
+              <td align="right">→</td>
+              <td align="right">4.6</td>
+              <td align="right">vNext</td>
+            </tr>
+            <tr>
+              <td align="left">Xamarin.iOS</td>
+              <td align="right">→</td>
+              <td align="right">→</td>
+              <td align="right">→</td>
+              <td align="right">→</td>
+              <td align="right">→</td>
+              <td align="right">→</td>
+              <td align="right">10.0</td>
+              <td align="right">vNext</td>
+            </tr>
+            <tr>
+              <td align="left">Xamarin.Android</td>
+              <td align="right">→</td>
+              <td align="right">→</td>
+              <td align="right">→</td>
+              <td align="right">→</td>
+              <td align="right">→</td>
+              <td align="right">→</td>
+              <td align="right">7.0</td>
+              <td align="right">vNext</td>
+            </tr>
+            <tr>
+              <td align="left">Universal Windows Platform</td>
+              <td align="right">→</td>
+              <td align="right">→</td>
+              <td align="right">→</td>
+              <td align="right">→</td>
+              <td align="right">10.0</td>
+              <td align="right">→</td>
+              <td align="right">→</td>
+              <td align="right">vNext</td>
+            </tr>
+            <tr>
+              <td align="left">Windows</td>
+              <td align="right">→</td>
+              <td align="right">8.0</td>
+              <td align="right">8.1</td>
+              <td align="right"></td>
+              <td align="right"></td>
+              <td align="right"></td>
+              <td align="right"></td>
+              <td align="right"></td>
+            </tr>
+            <tr>
+              <td align="left">Windows Phone</td>
+              <td align="right">→</td>
+              <td align="right">→</td>
+              <td align="right">8.1</td>
+              <td align="right"></td>
+              <td align="right"></td>
+              <td align="right"></td>
+              <td align="right"></td>
+              <td align="right"></td>
+            </tr>
+            <tr>
+              <td align="left">Windows Phone Silverlight</td>
+              <td align="right">8.0</td>
+              <td align="right"></td>
+              <td align="right"></td>
+              <td align="right"></td>
+              <td align="right"></td>
+              <td align="right"></td>
+              <td align="right"></td>
+              <td align="right"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p><a href="https://github.com/dotnet/standard/blob/master/docs/versions.md">github.com/dotnet/standard/blob/master/docs/versions.md</a></p>
+      </section>
+      <section>
+        <img src="img/netstd-diff.png" />
+        <p><a href="https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.4_diff.md">github.com/dotnet/standard/blob/master/docs/versions/netstandard1.4_diff.md</a></p>
+      </section>
+      <section>
+        <h2>APIS and versions</h2>
+        <h3><a href="https://apisof.net/">apisof.net</a></h3>
+      </section>
+      <section>
+        <h2>Check compatibility</h2>
+        <h3><a href="https://github.com/Microsoft/dotnet-apiport">github.com/Microsoft/dotnet-apiport</a></h3>
+      </section>
+      <section>
+        <h2>Check dependencies</h2>
+        <h3><a href="https://icanhasdot.net/">icanhasdot.net</a></h3>
+      </section>
+      <section>
+        <h2>.NET Standard 1.0</h2>
+        <h3>Paralysis</h3>
+      </section>
+      <section>
+        <h2>.NET Standard 2.0</h2>
+      </section>
+      <section>
+        <img src="img/ref-netfx.png" />
+        <p class="handle">Immo Landwerth @terrajobst</p>
+      </section>
+      <section>
+        <img id="ref-netstd" src="img/ref-netstd.png" />
+        <p class="handle">Immo Landwerth @terrajobst</p>
+      </section>
+      <section>
+        <h2>.NET Standard / .NET Core?</h2>
+        <h3>¯\_(ツ)_/¯</h3>
+      </section>
+      <section>
+        <h2>VS 2017 + .NET Standard 2.0</h2>
+        <h3>Dream on.</h3>
+      </section>
+      <section>
+        <img src="img/tweet.png" />
+      </section>
+      <section>
+        <h1>What is .NET Standard?</h1>
+        <blockquote>It ain't your father's .NET!</blockquote>
+        <h3>Adam Ralph</h3>
+        <p>Email: adam@adamralph.com</p>
+        <p>Twitter, GitHub, etc.: @adamralph</p>
+      </section>
+      <p class="handle">@adamralph</p>
+    </div>
+  </div>
+  <script src="js/reveal.js"></script>
+  <script>
+    Reveal.initialize({
+      transition: 'convex'
+    });
+  </script>
+
+</body>
+
+</html>
