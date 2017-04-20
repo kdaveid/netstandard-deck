@@ -1,9 +1,4 @@
 SDK: Microsoft.NET.Sdk
-ToolsVersion: 15.0
 TargetFramework: netstandard1.4
-Compile: "**\*.cs"
-EmbeddedResource: "**\*.resx"
 PackageReferences:
-    NETStandard.Library: 1.6
-References:
-    LiteGuard: "..\..\..\..\..\..\..\code\adamralph\liteguard\src\LiteGuard.net35\bin\Release\LiteGuard.dll"
+  - LiteGuard: 1.1.0
