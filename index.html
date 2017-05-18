@@ -52,6 +52,10 @@
         <h3>Tizen</h3>
       </section>
       <section>
+        <img src="img/tizen.png" />
+        <p><a href="https://www.tizen.org">tizen.org</a></p>
+      </section>
+      <section>
         <h2>Portable Class Libraries</h2>
       </section>
       <section>
@@ -68,6 +72,9 @@
       </section>
       <section>
         <img src="img/euler-british-isles.png" />
+      </section>
+      <section>
+        <img src="img/euler4.png" />
       </section>
       <section data-transition="convex-in none-out">
         <img src="img/venn4-template.png" />
@@ -88,8 +95,11 @@
       <section>
         <img src="img/venn7.png" />
       </section>
-      <section>
+      <section data-transition="convex-in none-out">
         <img src="img/venn11.png" />
+      </section>
+      <section data-transition="none-in convex-out">
+        <img src="img/venn11-fiasco.png" />
         <p class="fragment stamp">fiasco!</p>
       </section>
       <section>
@@ -366,6 +376,7 @@
         <p><a href="https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.4_diff.md">github.com/dotnet/standard/blob/master/docs/versions/netstandard1.4_diff.md</a></p>
       </section>
       <section>
+        <h2>.NET Standard 1.6 → 2.0 diff</h2>
         <img src="img/netstd-diff-2.0.png" />
         <p><a href="https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0_diff.md">github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0_diff.md</a></p>
       </section>
@@ -387,6 +398,22 @@
       <section>
         <h2>Reference anything!</h2>
         <p><a href="https://www.youtube.com/watch?v=fOzcVwzkGP0&amp;list=PLRAdsfhKI4OWx321A_pr-7HhRNk7wOLLY&amp;index=2">YouTube → Immo Landwerth → Playlists → .NET Standard → .NET Standard - What's new in 2.0</a></p>
+      </section>
+      <section>
+        <h2>Try it</h2>
+        <h3><a herf="https://github.com/adamralph/netstandard-magic" />github.com/adamralph/netstandard-magic<a></h3>
+        <h3><a herf="https://github.com/adamralph/netcore-magic" />github.com/adamralph/netcore-magic<a></h3>
+        <h3><a herf="https://github.com/adamralph/no-magic" />github.com/adamralph/no-magic<a></h3>
+      </section>
+      <section>
+        <h2>Try it</h2>
+        <h3>.NET Core 2.0 Preview 1</h3>
+        <div class="fragment">
+          <h3>Visual Studio 2017 Preview 15.3 for Windows</h3>
+          <h3>Visual Studio for Mac</h3>
+          <h3>Visual Studio Code</h3>
+        </div>
+        <p><a href="https://blogs.msdn.microsoft.com/dotnet/2017/05/10/announcing-net-core-2-0-preview-1/">blogs.msdn.microsoft.com/dotnet/2017/05/10/announcing-net-core-2-0-preview-1/</a></p>
       </section>
       <section>
         <h2>Compilation</h2>
@@ -411,19 +438,42 @@
         <h2>Check compatibility</h2>
         <h3><a href="https://github.com/Microsoft/dotnet-apiport">github.com/Microsoft/dotnet-apiport</a></h3>
       </section>
-      <section>
-        <img src="img/nsb.png" />
+      <section data-transition="none-in none-out">
+        <img src="img/vs-analyse-portability.gif" />
+      </section>
+      <section data-transition="none-in convex-out">
+        <img src="img/cli-analyse-portability.gif" />
       </section>
       <section>
-        <img src="img/methods.png" />
+        <table>
+          <tr>
+            <th>Assembly</th>
+            <th>Target</th>
+            <th>.NET FX 4.5.2</th>
+            <th>.NET Std 1.6</th>
+            <th>.NET Std 2.0</th>
+          </tr>
+          <tr>
+            <td>NServiceBus.Core</td>
+            <td>.NET FX 4.5.2</td>
+            <td>100%</td>
+            <td>66%</td>
+            <td>87%</td>
+          </tr>
+        </table>
+      </section>
+      <section>
+        <h2>What do I do?</h2>
+        <h3 class="fragment">Change</h3>
+        <h3 class="fragment">Separate</h3>
+        <h3 class="fragment">Remove</h3>
       </section>
       <section>
         <h2>APIS and versions</h2>
         <h3><a href="https://apisof.net/">apisof.net</a></h3>
       </section>
-      <section>
-        <h2>Check dependencies</h2>
-        <h3><a href="https://icanhasdot.net/">icanhasdot.net</a></h3>
+      <section data-transition="none-in convex-out">
+        <img src="img/api-catalog.gif" />
       </section>
       <section>
         <h2>.NET Standard / .NET Core?</h2>
@@ -440,7 +490,7 @@
           <tbody>
             <tr>
               <td>.NET Standard 2.0 Preview</td>
-              <td>Q2 2017</td>
+              <td>Q2 2017 <em>(11th May!)</em></td>
             </tr>
             <tr>
               <td>.NET Standard 2.0</td>
@@ -484,7 +534,14 @@
         <p><a href="https://github.com/davidfowl/NetStandard">github.com/davidfowl/NetStandard</a></p>
       </section>
       <section>
+        <h2>.NET Standard 2.1, 2.2, 3.0?</h22>
+      </section>
+      <section>
         <h2>How did I do?</h22>
+      </section>
+      <section>
+        <h3><a href="docs.particular.net/tutorials/intro-to-nservicebus">docs.particular.net/tutorials/intro-to-nservicebus</a></h3>
+        <h3><a href="https://particular.net/s/net-core-signup">particular.net/s/net-core-signup</a></h3>
       </section>
       <section>
         <img src="img/tweet.png" />
