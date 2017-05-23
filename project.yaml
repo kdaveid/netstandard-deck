@@ -1,4 +1,0 @@
-SDK: Microsoft.NET.Sdk
-TargetFramework: netstandard1.4
-PackageReferences:
-  - LiteGuard: 1.1.0
