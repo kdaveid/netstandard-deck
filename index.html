@@ -1,7 +1,9 @@
-<html>
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
 
 <head>
   <meta charset="utf-8" />
+  <title>What is .NET Standard?</title>
   <link rel="stylesheet" href="css/reveal.css">
   <link rel="stylesheet" href="css/theme/night.css">
   <link rel="stylesheet" href="css/style.css">
@@ -26,28 +28,40 @@
       </section>
       <section>
         <h2>NuGet packages</h2>
-        <h3>FakeItEasy<span class="fragment"> ✓ (1.6)</span></h3>
-        <h3>xBehave.net<span class="fragment"> ✓ (1.0)</span></h3>
-        <h3>LiteGuard<span class="fragment"> ✓ (1.0)</span></h3>
-        <h3>NServiceBus.RabbitMQ<span class="fragment"><em> - not yet</em></span></h3>
+        <table>
+          <tr>
+            <td>FakeItEasy</td>
+            <td><span class="fragment" data-fragment-index="0">.NET Standard 1.6</span></td>
+          </tr>
+          <tr>
+            <td>LiteGuard</td>
+            <td><span class="fragment" data-fragment-index="1">.NET Standard 1.0</span></td>
+          </tr>
+          <tr>
+            <td>xBehave.net<span class="fragment" data-fragment-index="2"> (beta)</span></td>
+            <td><span class="fragment" data-fragment-index="3">.NET Standard 1.0</span></td>
+          </tr>
+          <tr>
+            <td>NServiceBus.RabbitMQ<span class="fragment" data-fragment-index="4"> (beta)</span></td>
+            <td><span class="fragment" data-fragment-index="5">.NET Standard 2.0</span></td>
+          </tr>
+        </table>
       </section>
       <section>
         <h2>.NET Standard?</h2>
         <h3>¯\_(ツ)_/¯</h3>
       </section>
       <section>
-        <h3>.NET Framework</h3>
-        <div class="fragment">
-          <h3>.NET Core</h3>
-          <h3>Xamarin.iOS</h3>
-          <h3>Xamarin.Android</h3>
-          <h3>UWP</h3>
-          <h3>Tizen</h3>
-        </div>
-      </section>
-      <section>
-        <img src="img/tizen.png" />
-        <p><a href="https://www.tizen.org">tizen.org</a></p>
+        <h3>.NET Framework (and Mono)</h3>
+        <p class="fragment">Windows, Windows Server (and MacOS and Linux)</p>
+        <h3 class="fragment">.NET Core</h3>
+        <p class="fragment">Windows, Windows Server, Linux, MacOS, Tizen</p>
+        <h3 class="fragment">Xamarin.iOS, Xamarin.Mac</h3>
+        <p class="fragment">iPhone, iPad, MacOS (GUI)</p>
+        <h3 class="fragment">Xamarin.Android</h3>
+        <p class="fragment">All the things!</p>
+        <h3 class="fragment">UWP</h3>
+        <p class="fragment">Windows 10, Windows 10 Mobile, Xbox One, Hololens</p>
       </section>
       <section>
         <h2>Portable Class Libraries</h2>
@@ -118,7 +132,7 @@
         <table>
           <thead>
             <tr>
-              <th align="left">.NET Platform</th>
+              <th align="left">.NET Standard</th>
               <th align="right"><a href="https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.0.md">1.0</a></th>
               <th align="right"><a href="https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.1.md">1.1</a></th>
               <th align="right"><a href="https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.2.md">1.2</a></th>
@@ -161,7 +175,7 @@
               <td align="right">4.6</td>
               <td align="right">4.6</td>
               <td align="right">4.6</td>
-              <td align="right">vNext</td>
+              <td align="right">5.4</td>
             </tr>
             <tr>
               <td align="left">Xamarin.iOS</td>
@@ -172,7 +186,18 @@
               <td align="right">10.0</td>
               <td align="right">10.0</td>
               <td align="right">10.0</td>
-              <td align="right">vNext</td>
+              <td align="right">10.14</td>
+            </tr>
+            <tr>
+              <td align="left">Xamarin.Mac</td>
+              <td align="right">3.0</td>
+              <td align="right">3.0</td>
+              <td align="right">3.0</td>
+              <td align="right">3.0</td>
+              <td align="right">3.0</td>
+              <td align="right">3.0</td>
+              <td align="right">3.0</td>
+              <td align="right">3.8</td>
             </tr>
             <tr>
               <td align="left">Xamarin.Android</td>
@@ -183,7 +208,7 @@
               <td align="right">7.0</td>
               <td align="right">7.0</td>
               <td align="right">7.0</td>
-              <td align="right">vNext</td>
+              <td align="right">8.0</td>
             </tr>
             <tr>
               <td align="left">UWP</td>
@@ -253,14 +278,14 @@
       </section>
       <section>
         <h2>Runtime</h2>
-        <img id="ref-netstd" src="img/ref-netstd.png" />
+        <img class="img-white-back" src="img/ref-netstd.png" />
         <p class="handle">Immo Landwerth @terrajobst</p>
       </section>
       <section>
         <table>
           <thead>
             <tr>
-              <th align="left">.NET Platform</th>
+              <th align="left">.NET Standard</th>
               <th align="right"><a href="https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.0.md">1.0</a></th>
               <th align="right"><a href="https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.1.md">1.1</a></th>
               <th align="right"><a href="https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.2.md">1.2</a></th>
@@ -268,7 +293,7 @@
               <th align="right"><a href="https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.4.md">1.4</a></th>
               <th align="right"><a href="https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.5.md">1.5</a></th>
               <th align="right"><a href="https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.6.md">1.6</a></th>
-              <th align="right"><a href="https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md"><em>2.0</em></a></th>
+              <th align="right"><a href="https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md">2.0</a></th>
             </tr>
           </thead>
           <tbody>
@@ -281,7 +306,7 @@
               <td align="right">1.0</td>
               <td align="right">1.0</td>
               <td align="right">1.0</td>
-              <td align="right"><em>2.0</em></td>
+              <td align="right">2.0</td>
             </tr>
             <tr>
               <td align="left">.NET Framework</td>
@@ -292,7 +317,7 @@
               <td align="right">4.6.1</td>
               <td align="right">4.6.1</td>
               <td align="right">4.6.1</td>
-              <td align="right"><em>4.6.1</em></td>
+              <td align="right">4.6.1</td>
             </tr>
             <tr>
               <td align="left">Mono</td>
@@ -303,7 +328,7 @@
               <td align="right">4.6</td>
               <td align="right">4.6</td>
               <td align="right">4.6</td>
-              <td align="right"><em>vNext</em></td>
+              <td align="right">5.4</td>
             </tr>
             <tr>
               <td align="left">Xamarin.iOS</td>
@@ -314,7 +339,18 @@
               <td align="right">10.0</td>
               <td align="right">10.0</td>
               <td align="right">10.0</td>
-              <td align="right"><em>vNext</em></td>
+              <td align="right">10.14</td>
+            </tr>
+            <tr>
+              <td align="left">Xamarin.Mac</td>
+              <td align="right">3.0</td>
+              <td align="right">3.0</td>
+              <td align="right">3.0</td>
+              <td align="right">3.0</td>
+              <td align="right">3.0</td>
+              <td align="right">3.0</td>
+              <td align="right">3.0</td>
+              <td align="right">3.8</td>
             </tr>
             <tr>
               <td align="left">Xamarin.Android</td>
@@ -325,7 +361,7 @@
               <td align="right">7.0</td>
               <td align="right">7.0</td>
               <td align="right">7.0</td>
-              <td align="right"><em>vNext</em></td>
+              <td align="right">8.0</td>
             </tr>
             <tr>
               <td align="left">UWP</td>
@@ -336,7 +372,7 @@
               <td align="right">10.0</td>
               <td align="right">vNext</td>
               <td align="right">vNext</td>
-              <td align="right"><em>vNext</em></td>
+              <td align="right">vNext</td>
             </tr>
             <tr>
               <td align="left">Windows</td>
@@ -416,19 +452,18 @@
       </section>
       <section>
         <h2>Try it</h2>
-        <h3><a herf="https://github.com/adamralph/netstandard-magic" />github.com/adamralph/netstandard-magic<a></h3>
-        <h3><a herf="https://github.com/adamralph/netcore-magic" />github.com/adamralph/netcore-magic<a></h3>
-        <h3><a herf="https://github.com/adamralph/no-magic" />github.com/adamralph/no-magic<a></h3>
+        <h3><a href="https://github.com/adamralph/netstandard-magic">github.com/adamralph/netstandard-magic</a></h3>
+        <h3><a href="https://github.com/adamralph/netcore-magic">github.com/adamralph/netcore-magic</a></h3>
+        <h3><a href="https://github.com/adamralph/no-magic">github.com/adamralph/no-magic</a></h3>
       </section>
       <section>
         <h2>Try it</h2>
-        <h3>.NET Core 2.0 Preview 1</h3>
+        <h3>.NET Core 2.0</h3>
         <div class="fragment">
-          <h3>Visual Studio 2017 Preview 15.3 for Windows</h3>
-          <h3>Visual Studio for Mac</h3>
-          <h3>Visual Studio Code</h3>
+          <h3>Visual Studio 2017 15.3.x</h3>
+          <h3>Visual Studio for Mac 7.1.x</h3>
+          <h3>Visual Studio Code + C#</h3>
         </div>
-        <p><a href="https://blogs.msdn.microsoft.com/dotnet/2017/05/10/announcing-net-core-2-0-preview-1/">blogs.msdn.microsoft.com/dotnet/2017/05/10/announcing-net-core-2-0-preview-1/</a></p>
       </section>
       <section>
         <h2>Compilation</h2>
@@ -437,7 +472,7 @@
       </section>
       <section>
         <h2>Runtime</h2>
-        <img id="ref-netstd" src="img/netstd-runtime.png" />
+        <img class="img-white-back" src="img/netstd-runtime.png" />
       </section>
       <section>
         <h2>.NET Standard 1.x → 2.0</h2>
@@ -464,13 +499,15 @@
       </section>
       <section>
         <table>
-          <tr>
-            <th>Assembly</th>
-            <th>Target</th>
-            <th>.NET FX 4.5.2</th>
-            <th>.NET Std 1.6</th>
-            <th>.NET Std 2.0</th>
-          </tr>
+          <thead>
+            <tr>
+              <th>Assembly</th>
+              <th>Target</th>
+              <th>.NET FX 4.5.2</th>
+              <th>.NET Std 1.6</th>
+              <th>.NET Std 2.0</th>
+            </tr>
+          </thead>
           <tr>
             <td>NServiceBus.Core</td>
             <td>.NET FX 4.5.2</td>
@@ -508,11 +545,11 @@
           <tbody>
             <tr>
               <td>.NET Standard 2.0 Preview</td>
-              <td>Q2 2017 <em>(11th May!)</em></td>
+              <td>Q2 2017 (11th May!)</td>
             </tr>
             <tr>
               <td>.NET Standard 2.0</td>
-              <td>Q3 2017</td>
+              <td>Q3 2017 (14th August!)</td>
             </tr>
           </tbody>
         </table>
@@ -528,20 +565,24 @@
           </thead>
           <tbody>
             <tr>
-              <td>.NET Core 2.0 Preview</td>
-              <td>Q2 2017</td>
+              <td>.NET Core &amp; Standard 2.0 Preview</td>
+              <td>Q2 2017 (11th May!)</td>
             </tr>
             <tr>
-              <td>.NET Standard 2.0 Preview</td>
-              <td>Q2 2017</td>
+              <td>.NET Core &amp; Standard 2.0</td>
+              <td>Q3 2017 (14th August!)</td>
             </tr>
             <tr>
-              <td>.NET Core 2.0</td>
-              <td>Q3 2017</td>
+              <td>UWP 6.0 (.NET Standard 2.0)</td>
+              <td>Q4 2017</td>
             </tr>
             <tr>
-              <td>.NET Standard 2.0</td>
-              <td>Q3 2017</td>
+              <td>.NET Core 2.1 Preview</td>
+              <td>Q4 2017</td>
+            </tr>
+            <tr>
+              <td>.NET Core 2.1</td>
+              <td>Q1 2018</td>
             </tr>
           </tbody>
         </table>
@@ -552,10 +593,10 @@
         <p><a href="https://github.com/davidfowl/NetStandard">github.com/davidfowl/NetStandard</a></p>
       </section>
       <section>
-        <h2>.NET Standard 2.1, 2.2, 3.0?</h22>
+        <h2>.NET Standard 2.1, 2.2, 3.0?</h2>
       </section>
       <section>
-        <h2>How did I do?</h22>
+        <h2>How did I do?</h2>
       </section>
       <section>
         <h3><a href="docs.particular.net/tutorials/intro-to-nservicebus">docs.particular.net/tutorials/intro-to-nservicebus</a></h3>
